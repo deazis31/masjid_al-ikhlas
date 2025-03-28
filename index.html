@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masjid Al Ikhlas</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Scheherazade New', 'Amiri', serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Amiri', serif;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header dengan Navbar -->
+    <header class="bg-blue-800 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-mosque text-2xl mr-2"></i>
+                <h1 class="text-xl font-bold">MASJID AL IKHLAS</h1>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#beranda" class="hover:text-yellow-300">Beranda</a></li>
+                    <li><a href="#profile" class="hover:text-yellow-300">Profile</a></li>
+                    <li><a href="#visi-misi" class="hover:text-yellow-300">Visi Misi</a></li>
+                    <li><a href="#kegiatan" class="hover:text-yellow-300">Kegiatan</a></li>
+                    <li><a href="#kontak" class="hover:text-yellow-300">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-800">
+            <ul class="px-4 py-2">
+                <li class="py-2 border-b border-green-700"><a href="#beranda" class="block hover:text-yellow-300">Beranda</a></li>
+                <li class="py-2 border-b border-green-700"><a href="#profile" class="block hover:text-yellow-300">Profile</a></li>
+                <li class="py-2 border-b border-green-700"><a href="#visi-misi" class="block hover:text-yellow-300">Visi Misi</a></li>
+                <li class="py-2 border-b border-green-700"><a href="#kegiatan" class="block hover:text-yellow-300">Kegiatan</a></li>
+                <li class="py-2"><a href="#kontak" class="block hover:text-yellow-300">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="beranda" class="py-16 bg-gradient-to-r from-blue-700 to-green-600 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">Selamat Datang di Masjid Al Ikhlas</h2>
+                <p class="text-xl mb-8">Tempat ibadah dan pusat kegiatan umat Islam</p>
+                <a href="#profile" class="bg-yellow-500 hover:bg-yellow-600 text-green-900 font-bold py-2 px-6 rounded-lg inline-block">Kenali Kami</a>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Profile Masjid</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Sejarah Masjid</h3>
+                        <p class="text-gray-700 mb-4">Masjid Al Ikhlas didirikan pada tahun 1985 sebagai pusat ibadah dan pendidikan Islam di masyarakat sekitar.</p>
+                        <p class="text-gray-700">Dengan dukungan masyarakat, masjid ini terus berkembang menjadi tempat yang nyaman untuk beribadah dan belajar agama.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Fasilitas</h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Ruang sholat luas</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Tempat wudhu yang nyaman</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Perpustakaan Islam</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Ruang belajar anak</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Parkir luas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visi Misi Section -->
+        <section id="visi-misi" class="py-16 bg-gradient-to-r from-yellow-50 to-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Visi & Misi</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Visi</h3>
+                        <p class="text-gray-700">"Menjadi masjid yang menjadi pusat pembinaan umat Islam yang unggul dalam bidang ibadah, pendidikan, dan sosial kemasyarakatan."</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Misi</h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-start"><i class="fas fa-dot-circle text-green-500 mr-2 mt-1"></i> Menyediakan sarana ibadah yang nyaman</li>
+                            <li class="flex items-start"><i class="fas fa-dot-circle text-green-500 mr-2 mt-1"></i> Menyelenggarakan pendidikan Islam berkualitas</li>
+                            <li class="flex items-start"><i class="fas fa-dot-circle text-green-500 mr-2 mt-1"></i> Membina ukhuwah islamiyah</li>
+                            <li class="flex items-start"><i class="fas fa-dot-circle text-green-500 mr-2 mt-1"></i> Peduli terhadap masalah sosial masyarakat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kegiatan Section -->
+        <!-- Section Pengurus -->
+        <section id="pengurus" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-blue-800 mb-12">Struktur Pengurus</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-blue-100 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user-tie text-blue-600 text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-800">Ketua</h3>
+                        <p class="text-gray-700">Ustadz Ahmad Fauzi</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-green-100 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user-graduate text-green-600 text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-800">Sekretaris</h3>
+                        <p class="text-gray-700">Ustadz Muhammad Ali</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-yellow-100 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-coins text-yellow-600 text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-yellow-800">Bendahara</h3>
+                        <p class="text-gray-700">Ustadzah Fatimah Zahra</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kegiatan" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Kegiatan Masjid</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                        <div class="h-48 bg-green-600 flex items-center justify-center">
+                            <i class="fas fa-book-quran text-white text-5xl"></i>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-green-700 mb-2">Pengajian Rutin</h3>
+                            <p class="text-gray-700">Setiap malam Jumat ba'da Maghrib</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                        <div class="h-48 bg-green-600 flex items-center justify-center">
+                            <i class="fas fa-child text-white text-5xl"></i>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-green-700 mb-2">TPA/TPQ</h3>
+                            <p class="text-gray-700">Senin-Jumat sore pukul 16.00-17.30 WIB</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+                        <div class="h-48 bg-green-600 flex items-center justify-center">
+                            <i class="fas fa-hand-holding-heart text-white text-5xl"></i>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-green-700 mb-2">Baksos</h3>
+                            <p class="text-gray-700">Bulanan dengan jadwal fleksibel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="kontak" class="py-16 bg-gradient-to-r from-white to-blue-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Hubungi Kami</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Informasi Kontak</h3>
+                        <ul class="text-gray-700 space-y-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-green-600 text-xl mr-3"></i>
+                                <span>Jl. Masjid Al Ikhlas No. 123, Kelurahan Sejahtera, Kecamatan Damai, Kota Harmoni</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt text-green-600 text-xl mr-3"></i>
+                                <span>(021) 12345678</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-green-600 text-xl mr-3"></i>
+                                <span>info@masjidalikhlas.com</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6">
+                            <h4 class="text-xl font-semibold text-green-700 mb-3">Sosial Media</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-green-600 hover:text-green-800 text-2xl"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-green-600 hover:text-green-800 text-2xl"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-green-600 hover:text-green-800 text-2xl"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-green-600 hover:text-green-800 text-2xl"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-green-700 mb-4">Kirim Pesan</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-1">Nama</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-1">Pesan</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                            </div>
+                            <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold flex items-center">
+                        <i class="fas fa-mosque mr-2"></i>
+                        MASJID AL IKHLAS
+                    </h3>
+                    <p class="mt-2">Menjalin Ukhuwah, Membangun Ummah</p>
+                </div>
+                <div>
+                    <p>&copy; 2023 Masjid Al Ikhlas. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Hamburger Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Ganti ikon menu
+            const icon = menuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+    </script>
+</body>
+</html>
